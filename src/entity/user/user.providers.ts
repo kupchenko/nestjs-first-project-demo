@@ -7,6 +7,6 @@ export enum UserProviders {
 export const userProviders = [
     {
         provide: UserProviders.USER,
-        useClass: User,
+        useValue: User,
     },
 ];

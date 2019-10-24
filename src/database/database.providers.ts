@@ -11,7 +11,7 @@ export const databaseProviders = [
                 port: 5432,
                 username: 'root',
                 password: 'root',
-                database: 'test',
+                database: 'postgres',
             });
             sequelize.addModels([User]);
             await sequelize.sync();

@@ -10,10 +10,11 @@ export class UserService {
     }
 
     async getUser(id: string): Promise<User> {
+        // this.userRepository.findAll<User>({where: {id: 1}});
         return this.userRepository.findByPk(id, {attributes: ['id', 'name']});
     }
 
     async getUsers(): Promise<User[]> {
-        return this.userRepository.findAll<User>({where: {id: 1}});
+        return this.userRepository.findAll<User>();
     }
 }

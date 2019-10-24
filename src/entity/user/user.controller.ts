@@ -12,7 +12,7 @@ export class UserController {
       return await this.userService.getUsers();
     }
 
-    @Get('/:id')
+    // @Get('/:id') todo fix it
     async getUser(@Param('id') id): Promise<User> {
         return await this.userService.getUser(id);
     }
