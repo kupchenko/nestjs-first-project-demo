@@ -1,8 +1,8 @@
 {
   "name": "firstproj",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Simple Nest JS service",
+  "author": "Dmitrii Kupchenko",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
